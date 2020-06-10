@@ -45,8 +45,7 @@ def dogs
 end
  
   def list_pets
-    self.cats.all 
-    self.dogs.all
+"I have #{self.dogs.count} dog(s), and #{self.cats.count} cat(s)."
   end
   
   def sell_pets
