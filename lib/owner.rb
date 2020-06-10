@@ -28,9 +28,8 @@ def self.reset_all
   @@all.clear
 end
  
-def buy_cat(name, owner)
-    name = Cat.new(name, self)
-    @@pets[:cats] << name 
+def buy_cat(name)
+    Cat.new(name, self)
 end
  
 def buy_dog(name)
