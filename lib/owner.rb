@@ -45,7 +45,8 @@ def dogs
 end
  
   def list_pets
-    @@pets
+    self.cats.all 
+    self.dogs.all
   end
   
   def sell_pets
