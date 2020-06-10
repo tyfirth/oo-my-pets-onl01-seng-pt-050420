@@ -49,11 +49,8 @@ end
   end
   
   def sell_pets
-    pets.each do |pet, arr|
-      arr.map do |pet|
-        pet.mood = 'nervous'
-      end
-      arr.clear
+    pets = self.cats + self.dogs 
+    pets.each { |pet| pet.mood = "nervous"; pet.owner = nil }
     end
   end
   
