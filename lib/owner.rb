@@ -56,5 +56,9 @@ end
       arr.clear
     end
   end
+  
+  def walk_dogs
+    
+  end
  
 end
