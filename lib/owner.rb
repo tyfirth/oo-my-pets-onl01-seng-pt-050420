@@ -38,11 +38,11 @@ def buy_dog(name, owner)
 end
  
 def cats 
-  Cat.all.select { |cat| cat.owner == self }
+  Cat.all.select {|cat| cat.owner == self}
 end
  
 def dogs
-  @@pets[:dogs]
+  Dog.all.select {|dog| dog.owner == self}
 end
  
   def list_pets
